@@ -1,6 +1,9 @@
 There is a stack-buffer-overflow in main function(in apng2gif.cpp)(version<=1.8)
+
 **POC:**
+
 Get sourcecode in:https://sourceforge.net/projects/apng2gif/files/1.8/apng2gif-1.8-src.zip/download
+
 In Command Line:
 ```
 make CC="clang -fsanitize=address"
