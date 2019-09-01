@@ -43,7 +43,7 @@ then the function will get the string in SOAPAction that after the right "/" by 
 .text:00412054                 lw      $gp, 0x248+var_230($sp)
 .text:00412058                 bnez    $v0, loc_412080
 ```
-then it will call the sprintf function but it won't check the length of the strings that it goyt by strrchr,and it store it in the stack:
+then it will call the sprintf function but it won't check the length of the strings that it got by strrchr,and it store it in the stack:
 ```
 .text:00412430                 lui     $a1, 0x42  # 'B'
 .text:00412434                 move    $a0, $s4         # s
